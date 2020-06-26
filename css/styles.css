@@ -1,0 +1,241 @@
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    max-width: 100%;
+}
+
+img {
+    width: 100px;
+}
+
+/* Barra de navegación*/
+nav {
+    background-color: rgba(103,156,226,1);
+    background: linear-gradient(to bottom, rgba(103,156,226,1) 0%, rgba(52,78,113,1) 100%);
+    position: sticky;
+    width: 100%;
+    min-height: 7vh;
+    top: 0;
+}
+nav ul {
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: flex-end;
+    min-height: 7vh;
+    height: 100%;
+    list-style: none;
+    text-align: center;
+}
+nav ul li:hover {
+    background-color: #344E71;
+    
+    transform: scale(1.1);
+}
+a {
+    padding: 1.5vh;
+    display: block;
+    font: 1.7em;
+    text-decoration-line: none;
+    color: #ffffff      
+}
+/* Header -> INICIO */
+header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*display: table-cell;
+    vertical-align: middle;*/
+}
+
+.cont-inicio {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cont-left {
+    width: 55%;
+    flex-grow: 2;
+    flex-basis: auto;
+    text-align: center;
+}
+.cont-right {
+    width: 45%;
+    flex-grow: 1;
+    flex-basis: auto;
+
+}
+#cont-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.button1 {
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0,0,0,.12);
+    background-color: #6DA2E8;
+    border-radius: 30px;
+    border-width: 0px;
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 2.5;
+    width: 25%;
+}
+.button1:hover {
+    background-color: darken(#6DA2E8, 10%);
+    cursor: pointer;
+    box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2),
+        0px 5px 5px 0px rgba(0, 0, 0, 0.14),
+        0px 5px 5px 0px rgba(0,0,0,.12);
+}
+.button1:active {
+    border-style: none;
+    transform: scale(.95);
+}
+.frase1{
+    padding: 3vw;
+    font-size: 1.7em;
+}
+
+h1 {
+    font-size: 2.7em;
+}
+
+#img-inicio {
+    width: 100% !important;
+}
+/*@media only screen and (max-width: 800px){
+    .cont-inicio {
+        flex-flow: column-reverse wrap;
+    }
+
+    #img-inicio {
+        width: 70%;
+    }
+}*/
+
+/* BENEFICIOS */
+.cont-beneficios {
+    background-color: #3dacd436;
+}
+.titulo-beneficios {
+    padding-top: 50px;
+    text-align: center;
+}
+.cont-card-benef {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 30px 0;
+}
+.card-beneficio {
+    display: flex;
+    text-align: center;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    padding: 50px;
+}
+.card-img {
+    height: 13vw;
+    width: auto;
+}
+.material-icons{
+    font-size: 45px;
+    color: #4B7BFF;
+}
+
+h3 {
+    font-size: 1.9em;
+}
+.benef-frase {
+    padding-top: 20px;
+}
+/* QUIENES SOMOS*/
+
+.cont-nosotros {
+    background-image: url(/img/nosotro30.png);
+    background-position: 50% 20%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+}
+#titulo-nosotros {
+    text-align: center;
+    color: #353535;
+    padding-top: 100px;
+}
+#parrafo-nosotros {
+    text-align: center;
+    padding-top: 100px;
+}
+
+/*Contactanos*/
+.cont-contact {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3dacd436;
+    max-width: 100%;
+    min-height: 100vh;
+}
+#titulo-contact {
+    text-align: center;
+    color: #353535;
+    padding-top: 50px;
+}
+#cont-p-contact {
+    text-align: center;
+}
+#cont-card-contact {
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.card-contact {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 50%;
+}
+.card-contact img {
+    width: 15%;
+}
+.card-contact p {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 1.5em;
+}
+#frase2 {
+    font-size: 1.7em;
+}
+
+/* FOOTER */
+
+footer {
+    background-color:rgba(52,78,113,1) ;
+    background: linear-gradient(to bottom, rgba(103,156,226,1) 0%, rgba(52,78,113,1) 100%);
+    height: 16vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer p {
+    color: #ffffff;
+    
+}
+footer a {
+    font-size: 1.7em;
+}
+
+/* RESPONSIVE */
