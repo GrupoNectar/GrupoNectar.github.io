@@ -213,7 +213,7 @@ h3 {
 }
 #cont-card-contact {
     padding-top: 10px;
-    width: 100%;
+    width: 800px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -291,8 +291,11 @@ footer a {
     .cont-nosotros{
         height: 80vh;
     }
-    .cont-p-contact{
-        width: 80%;
+    #cont-card-contact{
+        width: 500px;
+    }
+    #cont-p-contact{
+        width: 70%;
     }
     .card-contact img {
         width: 50px;
@@ -322,5 +325,8 @@ footer a {
     }
     #me-link{
         font-size: 24px;
+    }
+    .benef-frase{
+        font-size: 1.5em;
     }
 }
