@@ -10,18 +10,19 @@
     <title>Modern Education | Inicio</title>
 </head>
 <body id = "first-cont">
-    <nav>
+    <nav class="topNav" id="myTopNav">
         <a href="#first-cont" id="a-logo">
-            <div class="logo">
+            <div class="logo" id="my-logo">
                 <img src="img/logo2.png" alt="" id="img-logo">
             </div>
         </a>
+        <a href="javascript:void(0)" class="my-icon" onclick="openMenu()"><i class="material-icons .md-light">menu</i></a>
         <ul>
-            <li><a class="a-nav" href="#first-cont">Inicio</a></li>
+            <li><a class="a-nav" href="#first-cont" onclick="openMenu()">Inicio</a></li>
             <li><a class="a-nav" href="teach.html">Enseña</a></li>
-            <li><a class="a-nav" href="#second-cont">Beneficios</a></li>
-            <li><a class="a-nav" href="#third-cont">Nosotros</a></li>
-            <li><a class="a-nav" href="#fourth-cont">Contáctenos</a></li>
+            <li><a class="a-nav" href="#second-cont" onclick="openMenu()">Beneficios</a></li>
+            <li><a class="a-nav" href="#third-cont" onclick="openMenu()">Nosotros</a></li>
+            <li><a class="a-nav" href="#fourth-cont" onclick="openMenu()">Contáctenos</a></li>
         </ul>
     </nav>
     <header>
@@ -122,4 +123,5 @@
         <p>Mz. J Lote 19 Comité 2 Urb. Ramón Castilla - Callao</p>
     </footer>
 </body>
+<script src="js/ihc.js"></script>
 </html>
