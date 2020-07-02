@@ -17,7 +17,7 @@ nav {
     background: linear-gradient(to bottom, rgba(109,118,232,1) 0%, rgba(55,59,116,1) 100%);
     position: sticky;
     width: 100%;
-    min-height: 7vh;
+    height: 45px;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -29,15 +29,13 @@ nav {
 }
 #img-logo {
     padding-left: 5px;
-    height: 80%;
-    width: 80%;
+    width: 130px;
 }
 
 nav ul {
     display: flex;
     flex-flow: row wrap ;
     justify-content: flex-end;
-    min-height: 7vh;
     height: 100%;
     list-style: none;
     text-align: center;
@@ -47,16 +45,16 @@ nav ul li:hover {
     transform: scale(1.1);
 }
 .a-nav {
-    padding: 1.5vh;
+    padding: 10px 20px;
     display: block;
-    font: 1.7em;
+    font-size: 1.1em;
     text-decoration-line: none;
     color: #ffffff;
     height: 100%;  
 }
 /* Header -> INICIO */
 header {
-    height: 100vh;
+    height: 45.11vw;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -71,17 +69,19 @@ header {
 }
 
 .cont-left {
-    width: 55%;
-    flex-grow: 2;
-    flex-basis: auto;
+    padding: 50px 0px;
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
     text-align: center;
 }
 .cont-right {
-    width: 45%;
-    flex-grow: 1;
+    width: 50%;
     flex-basis: auto;
     display: flex;
     align-items: center;
+    padding-right: 2vw; 
 }
 #cont-buttons {
     display: flex;
@@ -98,7 +98,7 @@ header {
     font-size: 1em;
     color: #ffffff;
     line-height: 2.5;
-    width: 25%;
+    width: 150px;
 }
 .button1:hover {
     background-color: darken(#6DA2E8, 10%);
@@ -113,12 +113,12 @@ header {
 }
 .frase1{
     padding: 3vw;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 h1 {
     color: #353535;
-    font-size: 2.7em;
+    font-size: 2em;
 }
 
 #img-inicio {
@@ -154,11 +154,11 @@ h1 {
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    width: 30%;
-    padding: 50px;
+    width: 29%;
+    padding: 30px 0px;
 }
 .card-img {
-    height: 13vw;
+    height: 175px;
     width: auto;
 }
 .material-icons{
@@ -199,18 +199,19 @@ h3 {
     align-items: center;
     background-color: #6D76E836;
     max-width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 #titulo-contact {
     text-align: center;
     color: #353535;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
 }
 #cont-p-contact {
     text-align: center;
 }
 #cont-card-contact {
-    width: 75%;
+    padding-top: 10px;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -218,11 +219,12 @@ h3 {
 .card-contact {
     display: flex;
     flex-flow: column wrap;
+    justify-content: flex-start;
     align-items: center;
-    width: 50%;
+    width: 45%;
 }
 .card-contact img {
-    width: 15%;
+    width: 75px;
 }
 .card-contact p {
     padding-top: 20px;
@@ -248,6 +250,54 @@ footer p {
     color: #ffffff;
 }
 footer a {
+    text-decoration-line: none;
+    color: #ffffff;
     font-size: 1.7em;
 }
-
+/* RESPONSIVE */
+@media (max-width: 819px){
+    .html{
+        font-size: 2px;
+    }
+    header{
+        height: 600px;
+    }
+    .cont-inicio{
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+    .cont-left{
+        width: 80% ;
+    }
+    .cont-right{
+        width: 50% ;
+    }
+    .card-beneficio {
+        display: flex;
+        text-align: center;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 40%;
+        padding: 30px 0px;
+    }
+    .card-img{
+        height: 150px;
+        width: auto;
+    }
+    .cont-nosotros{
+        height: 80vh;
+    }
+    .cont-p-contact{
+        width: 80%;
+    }
+    .card-contact img {
+        width: 50px;
+    }
+    #frase2 {
+        font-size: 1.5em;
+    }
+    .card-contact p{
+        font-size: 1em;
+    }
+}
