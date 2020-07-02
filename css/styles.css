@@ -275,11 +275,6 @@ footer a {
         width: 50% ;
     }
     .card-beneficio {
-        display: flex;
-        text-align: center;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        align-items: center;
         width: 40%;
         padding: 30px 0px;
     }
@@ -304,3 +299,22 @@ footer a {
     }
 }
 
+@media (max-width: 480px)
+{
+    *{
+        font-size: 14px;
+    }
+    .cont-left{
+        width: 80% ;
+    }
+    .cont-right{
+        width: 60% ;
+    }
+    .card-beneficio {
+        width: 80%;
+        padding: 30px 0px;
+    }
+    #me-link{
+        font-size: 24px;
+    }
+}
