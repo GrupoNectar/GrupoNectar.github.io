@@ -66,6 +66,7 @@ header {
 .cont-inicio {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .cont-left {
@@ -77,7 +78,7 @@ header {
     text-align: center;
 }
 .cont-right {
-    width: 50%;
+    width: 35%;
     flex-basis: auto;
     display: flex;
     align-items: center;
@@ -171,6 +172,7 @@ h3 {
 }
 .benef-frase {
     padding-top: 20px;
+    font-size: 1.2em;
 }
 /* QUIENES SOMOS*/
 
@@ -257,12 +259,19 @@ footer a {
 }
 
 /* RESPONSIVE */
+@media (max-width:880px){
+    .card-beneficio {
+        width: 40%;
+        padding: 30px 0px;
+    }
+}
+
 @media (max-width: 819px){
     .html{
         font-size: 2px;
     }
     header{
-        height: 600px;
+        height: 650px;
     }
     .cont-inicio{
         flex-flow: column-reverse;
@@ -272,11 +281,8 @@ footer a {
         width: 80% ;
     }
     .cont-right{
-        width: 50% ;
-    }
-    .card-beneficio {
-        width: 40%;
-        padding: 30px 0px;
+        padding-top: 10px;
+        width: 45% ;
     }
     .card-img{
         height: 150px;
@@ -299,7 +305,7 @@ footer a {
     }
 }
 
-@media (max-width: 480px)
+@media (max-width: 600px)
 {
     *{
         font-size: 14px;
